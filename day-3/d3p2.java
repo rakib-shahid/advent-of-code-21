@@ -14,7 +14,7 @@ public class d3p2 {
         ArrayList<String> input = new ArrayList<String>();
         ArrayList<String> input2 = new ArrayList<String>();
         ArrayList<String> removeBits = new ArrayList<String>();
-        Scanner s1 = new Scanner(new File("E:\\Users\\rakib\\Downloads\\jub_input.csv") );
+        Scanner s1 = new Scanner(new File("E:\\Users\\rakib\\Downloads\\input3.csv") );
         while (s1.hasNextLine()){
             cString = s1.nextLine();
             input.add(cString);
@@ -122,7 +122,8 @@ public class d3p2 {
             co2 = input2.get(0);
         }
         
-
+        System.out.println("Oxygen Bit = "+oxygen);
+        System.out.println("  CO2  Bit = "+co2);
         System.out.println("Oxygen Bit = "+Integer.parseInt(oxygen,2));
         System.out.println("  CO2  Bit = "+Integer.parseInt(co2,2));
         System.out.println(Integer.parseInt(co2,2)*Integer.parseInt(oxygen,2));
